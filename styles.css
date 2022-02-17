@@ -1,0 +1,162 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+.title-text{
+  margin-top: 30px;
+  font-weight: 200;
+  opacity: 50%;
+  margin-bottom: 0;
+}
+
+h1{
+  margin: 0;
+}
+
+.sub-text{
+  width: 38%;
+  margin: 0 auto;
+  opacity: 50%;
+}
+
+.main-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 80%;
+  margin: 30px auto 0 auto;
+
+}
+
+.main-container p{
+  padding-left: 1.5rem;
+  width: 90%;
+  opacity: 50%;
+}
+
+.container-two, .container-four{
+  padding-right: 1rem;
+}
+
+
+.container-one, .container-two, .container-three, .container-four{
+  text-align: left;
+  position: relative;
+  margin: 1rem;
+  padding-bottom: 5rem;
+  box-shadow: 0px 0px 12px 0px rgba(232,231,231,0.75);
+-webkit-box-shadow: 0px 0px 12px 0px rgba(232,231,231,0.75);
+-moz-box-shadow: 0px 0px 12px 0px rgba(232,231,231,0.75);
+}
+
+.container-three{
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+hr{
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  height: 2px;
+}
+
+.container-one hr {
+ background-color: hsl(180, 62%, 55%);
+}
+
+.container-two hr{
+  background-color: hsl(0, 78%, 62%);
+}
+
+.container-three hr{
+  background-color: hsl(34, 97%, 64%);
+}
+
+.container-four hr{
+  background-color: hsl(212, 86%, 64%);
+}
+
+.container-one, .container-two, .container-three, .container-four{
+  background-position: 90% 90%;
+  background-repeat: no-repeat;
+}
+
+
+.container-one{
+  background-image: url("images/icon-supervisor.svg");
+}
+
+.container-two{
+  background-image: url("images/icon-team-builder.svg");
+}
+
+.container-three{
+  background-image: url("images/icon-karma.svg");
+}
+
+.container-four{
+  background-image: url("images/icon-Calculator.svg");
+}
+
+
+.container-one, .container-four{
+  top: 130px;
+}
+
+h2{
+  padding-left: 1.5rem;
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .main-container{
+    width: 90%;
+  }
+
+  .sub-text{
+    width: 90%;
+  }
+
+  .container-one{
+    grid-column: 1 / span 4;
+  }
+
+  .container-two{
+    grid-column: 1 / span 4;
+    grid-row: 2 / 3;
+  }
+
+  .container-three{
+    grid-column: 1 / span 4;
+    grid-row: 3 / 4;
+  }
+
+  .container-four{
+    grid-column: 1 / span 4;
+    grid-row: 4 / 5;
+  }
+
+.container-one, .container-four{
+  position: relative;
+  top: 0 ;
+}
+
+}
+
+@media screen and (max-width: 376px) {
+
+  .main-container{
+    width: 95%;
+  }
+
+
+  .title-text{
+    font-size: 1.5rem;
+}
+
+h1{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
